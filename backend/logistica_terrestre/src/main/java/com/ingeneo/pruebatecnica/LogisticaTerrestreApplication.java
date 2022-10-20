@@ -1,4 +1,4 @@
-package com.ingeneo.seguridadapi;
+package com.ingeneo.pruebatecnica;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
