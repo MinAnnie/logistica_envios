@@ -16,5 +16,5 @@ public class OrderStatus {
 	@Column(name = "idEstadoEnvio")
 	private int idEstadoEnvio;
 	@Column(name = "nombreEstadoEnvio")
-	private int nombreEstadoEnvio;
+	private String nombreEstadoEnvio;
 }

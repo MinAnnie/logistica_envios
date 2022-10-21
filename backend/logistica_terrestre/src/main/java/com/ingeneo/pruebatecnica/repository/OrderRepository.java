@@ -1,5 +1,6 @@
 package com.ingeneo.pruebatecnica.repository;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -13,7 +14,7 @@ import com.ingeneo.pruebatecnica.entities.Order;
 public interface OrderRepository extends CrudRepository<Order, Integer>{
 
 	@Transactional(readOnly = true)
-	Optional<Order> findByFechaEntrega(String fechaEntrega);
+	Optional<Order> findByFechaEntrega(Date fechaEntrega);
 	
 	@Override
 	List<Order> findAll();

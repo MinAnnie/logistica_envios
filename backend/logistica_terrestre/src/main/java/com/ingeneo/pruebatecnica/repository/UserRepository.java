@@ -15,6 +15,12 @@ public interface UserRepository extends CrudRepository<User, Integer>{
 	@Transactional(readOnly = true)
 	Optional<User> findByNombreUsuario(String nombreUsuario);
 	
+	@Transactional(readOnly = true)
+	Optional<User> findByCorreo(String correo);
+	
+	@Transactional(readOnly = true)
+	Optional<User>  findByNumeroDocumento(int numeroDocumento);
+	
 	@Override
 	List<User> findAll();
 }
